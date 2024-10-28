@@ -3,4 +3,7 @@ h1{text-align: center;}
 nav a{
   text-align:center;
   padding:20px;
+  display: inline-block; 
+    text-decoration: none;
+    color: #000;
 }
