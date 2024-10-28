@@ -27,5 +27,5 @@ nav a::after {
             transform: scaleX(1); /* Show the line on hover and when active */
         }
    nav a.active {
-            color: pink; /* Color for the active link */
+            color: hotpink; /* Color for the active link */
         }
