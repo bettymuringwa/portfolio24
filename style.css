@@ -3,6 +3,12 @@ body{
 }
 h1{text-align: center;}
 
+.navline {
+    border: none;         
+    height: 2px;          
+    background-color: #000;
+}
+
 nav {
     text-align:center;
 }
