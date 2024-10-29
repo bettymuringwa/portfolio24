@@ -7,6 +7,7 @@ h1{text-align: center;}
     border: none;         
     height: 2px;   
     width: 60%;
+    margin: 20px auto;    /* Center the line and add vertical space */
     background-color: #000;
 }
 
