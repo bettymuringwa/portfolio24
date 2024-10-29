@@ -8,7 +8,14 @@
 </head>
 <body>
     
-<h2 class="footer">Website created by Betty Precious Muringwa </h2>
+     <footer>
+        <p>&copy; <span id="current-year"></span> Website created by Betty Precious Muringwa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the current year and display it in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   
 </body>
 </html>
