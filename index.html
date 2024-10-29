@@ -20,5 +20,16 @@
 
     <h1>Welcome to My Homepage</h1>
     <!-- Other homepage content -->
+
+        <div id="footer"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the footer:', error));
+    </script>
 </body>
 </html>
