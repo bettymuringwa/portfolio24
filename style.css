@@ -1,6 +1,12 @@
 body{
     background-color:#E5E4E2; 
 }
+
+.wrapper{
+    width: 90%;
+    background-color: red;
+}
+
 h1{text-align: center;}
 
 .navline {
