@@ -4,30 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>BPORTFOLIO</title>
+    <title>HOME</title>
 </head>
-<body>
-    <nav>
-        <a href="nav.html">HOME</a>
-              <a href="about.html">ABOUT</a>
-              <a href="calculator.html">CALCULATOR</a>
-              <a href="warehouse.html">WAREHOUSE</a>
-              <a href="stockvel.html">STOCKVEL</a>
-    </nav>
-<hr class="navline">
-       <script>
-        // Get all links
-        const links = document.querySelectorAll('nav a');
+    <body>
+ <div id="nav"></div>
 
-        // Add click event listener to each link
-        links.forEach(link => {
-            link.addEventListener('click', function() {
-                // Remove 'active' class from all links
-                links.forEach(l => l.classList.remove('active'));
-                // Add 'active' class to the clicked link
-                this.classList.add('active');
-            });
-        });
-    </script> 
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the nav:', error));
+    </script>
+
+    <h1>Welcome to My Homepage</h1>
+    <!-- Other homepage content -->
 </body>
 </html>
