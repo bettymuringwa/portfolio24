@@ -5,7 +5,8 @@ h1{text-align: center;}
 
 .navline {
     border: none;         
-    height: 2px;          
+    height: 2px;   
+    width: 60%;
     background-color: #000;
 }
 
