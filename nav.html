@@ -1,1 +1,23 @@
 
+  <nav>
+        <a href="home.html">HOME</a>
+              <a href="about.html">ABOUT</a>
+              <a href="calculator.html">CALCULATOR</a>
+              <a href="warehouse.html">WAREHOUSE</a>
+              <a href="stockvel.html">STOCKVEL</a>
+    </nav>
+<hr class="navline">
+       <script>
+        // Get all links
+        const links = document.querySelectorAll('nav a');
+
+        // Add click event listener to each link
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'active' class from all links
+                links.forEach(l => l.classList.remove('active'));
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script> 
