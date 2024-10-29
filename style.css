@@ -4,7 +4,7 @@ body{
 }
 
 .wrapper{
-  max-width: 800px; /* Set a maximum width */
+  max-width: 95%; /* Set a maximum width */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add padding inside the container */
     background-color: pink; /* Background color for the container */
