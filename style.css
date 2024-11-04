@@ -91,7 +91,7 @@ nav a::after {
         }
 
 /* Class for projects centered, bold, and dark text */
-        .centered-text {
+        .spantext {
             font-weight: bold;
             color: #333; /* Dark color */
             text-decoration: none;
