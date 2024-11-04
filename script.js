@@ -1,4 +1,4 @@
-
+//CALCULATOR FUNCTIONS
 // Function to append values to the display
 function appendToDisplay(value) {
     document.getElementById("display").value += value;
