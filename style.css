@@ -34,31 +34,38 @@ nav {
     text-align:center;
 }
 
-nav a{
-  padding:20px;
- margin: 0 15px; /* Spacing between links */
-  display: inline-block; 
+nav a {
+    padding: 20px;
+    margin: 0 15px; /* Spacing between links */
+    display: inline-block;
     text-decoration: none;
     color: #000;
+    position: relative; /* Needed for positioning the ::after pseudo-element */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 nav a::after {
-        content: ""; /* Empty content for the line */
+    content: ""; /* Empty content for the line */
     width: 100%; /* Full width */
-            height: 2px; /* Line height */
-            background: #000; /* Line color */
-            bottom: -5px; /* Position below the link */
-      transform: scaleX(0); /* Initially hide the line */
-            transition: transform 0.3s ease; /* Smooth transition */
+    height: 2px; /* Line height */
+    background: #000; /* Line color */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position below the link */
+    transform: scaleX(0); /* Initially hide the line */
+    transform-origin: left; /* Animates from left to right */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
- nav a:hover::after,
-        nav a.active::after {
-            transform: scaleX(1); /* Show the line on hover and when active */
-        }
-   nav a.active {
-            color: hotpink; /* Color for the active link */
-        }
+nav a:hover::after, /* Hover effect on link */
+nav a.active::after { /* Active link effect */
+    transform: scaleX(1); /* Show the line on hover and when active */
+}
+
+nav a:hover, /* Hover effect on text color */
+nav a.active { /* Active link text color */
+    color: hotpink; /* Color for the active link */
+}
 
  /* Style for the container holding the columns */
         .container {
