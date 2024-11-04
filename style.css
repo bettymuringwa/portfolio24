@@ -59,3 +59,33 @@ nav a::after {
    nav a.active {
             color: hotpink; /* Color for the active link */
         }
+
+ /* Style for the container holding the columns */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        /* Style for each section/column */
+        .section {
+            width: 30%;
+            height: 200px; /* Set a fixed height for the color blocks */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.2s ease, opacity 0.3s ease;
+            cursor: pointer;
+            opacity: 0.5; /* Faded by default */
+        }
+
+        /* Background colors for each section */
+        .section1 { background-color: #FF6347; } /* Tomato */
+        .section2 { background-color: #4682B4; } /* SteelBlue */
+        .section3 { background-color: #32CD32; } /* LimeGreen */
+
+        /* Hover and active state: fully visible colors */
+        .section:hover, .section:active {
+            opacity: 1;
+            transform: scale(1.05);
+        }
